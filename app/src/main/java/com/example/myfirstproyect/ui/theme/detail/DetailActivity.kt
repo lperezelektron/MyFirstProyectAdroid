@@ -23,6 +23,9 @@ class DetailActivity : AppCompatActivity() {
         val binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val movie = intent.getParcelableExtra<Movie>(EXTRA_MOVIE)
         if (movie != null) {
             setTitle(movie.title)
@@ -30,8 +33,12 @@ class DetailActivity : AppCompatActivity() {
                 .with(this)
                 .load("https://image.tmdb.org/t/p/w780/${movie.backdrop_path}")
                 .into(binding.backdrop)
-            binding.summary.text = movie.overview
+            binding.summary.text = movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview + movie.overview +movie.overview +movie.overview
             bindDetailInfo(binding.detailInfo, movie)
+
+            binding.fab.setOnClickListener{
+
+            }
         }
 
     }

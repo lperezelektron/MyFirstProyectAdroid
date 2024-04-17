@@ -28,6 +28,7 @@
 
         <activity
             android:name=".ui.theme.detail.DetailActivity"
+            android:theme="@style/Theme.MyFirstProyect.NoActionBar"
             android:parentActivityName=".ui.theme.main.MainActivity"
             android:exported="false" />
     </application>
