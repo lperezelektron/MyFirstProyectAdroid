@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -35,6 +37,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -56,6 +59,15 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.glide)
+    implementation(libs.material)
+    implementation(libs.retrofit.v2110)
+    implementation(libs.converter.gson)
+    implementation(libs.androidx.lifecycle.runtime.ktx.v270)
+    implementation(libs.kotlin.android.extensions.runtime)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

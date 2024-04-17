@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.MyFirstProyect" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyFirstProyect" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="android:textViewStyle">@style/textViewStyle</item>
+
+    </style>
+
+    <style name="textViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">40sp</item>
+    </style>
+
 </resources>

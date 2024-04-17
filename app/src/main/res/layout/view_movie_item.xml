@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.example.myfirstproyect.ui.theme.common.AspectRatioImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        app:ratio="1.5" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/localTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary70"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="16dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textColorLink="@color/design_default_color_on_primary"
+        tools:text="Movie Title" />
+</LinearLayout>
